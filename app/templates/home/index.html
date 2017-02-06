@@ -1,0 +1,14 @@
+{% import "bootstrap/utils.html" as utils %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% extends "base.html" %}
+{% block title %}Sign-In Here{% endblock %}
+
+{% block body %}
+<div class="col-sm-4 col-xs-8" id="inner">
+    <br/>
+    <p>Please sign in here!</p>
+    {{ wtf.quick_form(form) }}
+  </div>
+</div>
+{% endblock %}
